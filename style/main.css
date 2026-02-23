@@ -1,0 +1,252 @@
+/* @author: Elhajj Howard */
+
+/* Responsive @media queries for different screen sizes */
+@media only screen and (min-width: 1025px) {
+    #mobile_menu {display: none;}
+    body {
+        width: 90%;
+        max-width: 1024px;
+    }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+    #mobile_menu {display: none;}
+    body {
+        width: 95%;
+    }
+    .two-column {
+        gap: 15px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #mobile_menu {display: block;}
+    #nav_menu {display: none;}
+    body {
+        width: 95%;
+    }
+    .two-column {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .column {
+        width: 100%;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    h2 {
+        font-size: 1.25em;
+    }
+    .profile-image {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    #mobile_menu {display: block;}
+    #nav_menu {display: none;}
+    body {
+        width: 98%;
+    }
+    h1 {
+        font-size: 1.25em;
+    }
+    h2 {
+        font-size: 1.1em;
+    }
+    p {
+        font-size: 0.95em;
+    }
+    .profile-image {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* Body and general styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    margin: 10px auto;
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+/* Header styles */
+header {
+    width: 100%;
+    padding: 10px 0;
+    clear: both;
+    text-align: center;
+}
+
+.profile-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid #1e6bd6;
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 500px;
+    height: auto;
+}
+
+/* Heading styles */
+h1, h2, h3, h4, h5, h6 {
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    color: #333;
+}
+
+h2 {
+    text-align: left;
+    font-size: 1.5em;
+    color: #555;
+}
+
+h3 {
+    font-size: 1.25em;
+    padding: 10px;
+}
+
+/* Paragraph styles */
+p {
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: left;
+    line-height: 1.6;
+}
+
+/* List styles */
+ul {
+    list-style-type: square;
+    margin-left: 40px;
+}
+
+ol {
+    margin-left: 40px;
+}
+
+li {
+    padding-left: 10px;
+}
+
+/* Blockquote styles */
+blockquote {
+    padding: 10px 20px;
+    margin: 10px 0;
+    font-style: italic;
+    background-color: #f9f9f9;
+    border-left: 4px solid #1e6bd6;
+}
+
+/* Pre element styles */
+pre {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border: 1px solid #ccc;
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+/* Address styles */
+address {
+    padding: 10px;
+    font-style: normal;
+}
+
+/* Two-column layout for interests page */
+.two-column {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+.column {
+    flex: 1;
+    min-width: 0;
+}
+
+.section-card {
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #fafafa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.section-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Navigation menu styles */
+#nav_menu ul {
+    list-style-type: none;
+    padding: 1em 0;
+    margin: 0;
+    text-align: center;
+    background-color: #333;
+}
+
+#nav_menu ul li {
+    display: inline;
+    padding: 0;
+}
+
+#nav_menu ul li a {
+    display: inline-block;
+    padding: 0.8em 1.5em;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+#nav_menu ul li a:hover {
+    background-color: #555;
+}
+
+#nav_menu ul li a.current {
+    background-color: #1e6bd6;
+}
+
+#nav_menu ul li a.lastitem {
+    margin-right: 0;
+}
+
+/* Main content area */
+main {
+    width: 100%;
+    padding: 10px;
+    background-color: #ffffff;
+    margin: 10px 0;
+}
+
+/* Links */
+a {
+    color: #1e6bd6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #666;
+    clear: both;
+}

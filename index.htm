@@ -3,8 +3,8 @@
 <!-- 
 Name: Elhajj Howard
 University: Southern Illinois University
-Date Developed: 1/16/2025
-Date Tested: 1/23/2025
+Date Developed: 2/22/2026
+Date Tested: 2/22/2026
 -->
 
 <html lang="en-US">
@@ -13,7 +13,15 @@ Date Tested: 1/23/2025
         <title>Elhajj Howard: Personal Portfolio</title> 
         <meta name="description" content="Elhajj Howard personal portfolio resume">
         <meta name="keywords" content="Elhajj Howard, personal portfolio, resume">
-        <link rel="stylesheet" href="style/stylesheet.css">
+        <link rel="stylesheet" href="style/main.css">
+        <link rel="stylesheet" href="style/slicknav.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
+        <script src="js/jquery.slicknav.min.js"></script> 
+        <script type="text/javascript"> 
+            $(document).ready(function(){
+                $('#nav_menu').slicknav({prependTo:"#mobile_menu"}); 
+            }); 
+        </script>
     </head>
 
     <body>
@@ -21,6 +29,18 @@ Date Tested: 1/23/2025
         <header>
             <img class="profile-image" src="images/image.jpg" alt="PP Logo" width="500"> 
         </header> 
+        
+        <!-- Navigation menu -->
+        <nav id="mobile_menu"></nav>
+        <nav id="nav_menu">
+            <ul>
+                <li><a href="index.htm" class="current">Home</a></li>
+                <li><a href="education.htm">Education</a></li>
+                <li><a href="interests.htm">Interests</a></li>
+                <li><a href="occupation.htm">Occupation</a></li>
+                <li><a href="contact.htm" class="lastitem">Contact</a></li>
+            </ul>
+        </nav>
         
         <!-- Main heading -->
         <h1>Elhajj Howard</h1>

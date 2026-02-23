@@ -3,8 +3,8 @@
 <!--
 Name: Elhajj Howard
 University: Southern Illinois University
-Date Developed: 2/8/2026
-Date Tested: 2/8/2026
+Date Developed: 2/22/2026
+Date Tested: 2/22/2026
 -->
 
 <html lang="en-US">
@@ -13,7 +13,15 @@ Date Tested: 2/8/2026
         <title>Elhajj Howard: Interests</title>
         <meta name="description" content="Elhajj Howard interests and activities">
         <meta name="keywords" content="Elhajj Howard, interests, hobbies, projects">
-        <link rel="stylesheet" href="style/stylesheet.css">
+        <link rel="stylesheet" href="style/main.css">
+        <link rel="stylesheet" href="style/slicknav.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
+        <script src="js/jquery.slicknav.min.js"></script> 
+        <script type="text/javascript"> 
+            $(document).ready(function(){
+                $('#nav_menu').slicknav({prependTo:"#mobile_menu"}); 
+            }); 
+        </script>
     </head>
 
     <body>
@@ -23,17 +31,29 @@ Date Tested: 2/8/2026
             <p>Highlights of the projects, hobbies, and groups I enjoy outside of class.</p>
         </header>
 
-        <!-- Two-column layout -->
+        <!-- Navigation menu -->
+        <nav id="mobile_menu"></nav>
+        <nav id="nav_menu">
+            <ul>
+                <li><a href="index.htm">Home</a></li>
+                <li><a href="education.htm">Education</a></li>
+                <li><a href="interests.htm" class="current">Interests</a></li>
+                <li><a href="occupation.htm">Occupation</a></li>
+                <li><a href="contact.htm" class="lastitem">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Two-column responsive layout -->
         <main class="two-column">
             <div class="column">
-                <!-- Section 1 -->
+                <!-- Section 1: Projects -->
                 <section class="section-card">
                     <h2>Projects</h2>
                     <p>I like building small tools that solve real problems, such as study planners and
                     simple data dashboards. These projects help me practice clean design and teamwork.</p>
                 </section>
 
-                <!-- Section 2 -->
+                <!-- Section 2: Clubs and RSO's -->
                 <section class="section-card">
                     <h2>Clubs and RSO's</h2>
                     <p>I attend campus tech meetups and coding clubs to learn new ideas and connect with
@@ -42,14 +62,14 @@ Date Tested: 2/8/2026
             </div>
 
             <div class="column">
-                <!-- Section 3 -->
+                <!-- Section 3: Hobbies -->
                 <section class="section-card">
                     <h2>Hobbies</h2>
                     <p>In my free time, I enjoy game design, music playlists, and exploring new tools that
                     make creative work easier.</p>
                 </section>
 
-                <!-- Section 4 -->
+                <!-- Section 4: Volunteer Work -->
                 <section class="section-card">
                     <h2>Volunteer Work</h2>
                     <p>I volunteer when I can to support student tech events and help new members get
